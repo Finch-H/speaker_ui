@@ -95,34 +95,207 @@ class _HomepageState extends State<Homepage> {
 
 
         body:
-          Center(
-            child: SizedBox(
-              height: size.height*0.5,
-              width: size.width*0.8,
-              child: Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Container(
+          Padding(
+            padding: const EdgeInsets.only(top:100.0),
+            child: Center(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.vertical,
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Row(
+                          children:[ Padding(
+                            padding: const EdgeInsets.only(left:32.0),
+                            child: Text("Choose Speaker",
+                        textAlign: TextAlign.left,
+                        style: GoogleFonts.poppins(
+                            color: Colors.black,
+                            fontSize: size.width * 0.06,
+                            fontWeight: FontWeight.bold,
+                        ),),
+                          )]),
+                   Center(
 
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                      border: Border.all(
-                        color: Colors.white,
-                      ),
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                      boxShadow: [
-                  BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 5,
-                  blurRadius: 7,
-                  offset: Offset(0, 3), // changes position of shadow
-                ),
-                ], ),
+                        child: SizedBox(
+                          height: size.height*0.55,
+                          width: size.width*0.95,
+                          child: Padding(
+                            padding: const EdgeInsets.all(15.0),
+                            child: Container(
+                              child: Padding(
+                                padding: const EdgeInsets.only(top:20.0),
+                                child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      new Image.asset("assets/images/BOSE.png",scale: 1.96,),
+                                       Padding(
+                                         padding: const EdgeInsets.all(0.0),
+                                         child: Text("Smart Speaker",
+                                           textAlign: TextAlign.center,
+                                          style: GoogleFonts.poppins(
+                                            color: Colors.black,
+                                            fontSize: size.width * 0.06,
+                                            fontWeight: FontWeight.bold,
+                                          ),),
+                                       ),
+                                      Text("With Voice Control",
+                                        textAlign: TextAlign.center,
+                                        style: GoogleFonts.poppins(
+                                          color: Colors.black,
+                                          fontSize: size.width * 0.04,
+                                          fontWeight: FontWeight.normal,
+                                        ),),
+
+                                    ]
+
+                                ),
+                              ),
+
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                  border: Border.all(
+                                    color: Colors.white,
+                                  ),
+                                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                                  boxShadow: [
+                              BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset: Offset(0, 3), // changes position of shadow
+                            ),
+                            ], ),
+
 
       ),
 
+                          ),
+                        ),
+
+                   ),
+                      Row(
+                        children: [
+                         Padding(
+                           padding: const EdgeInsets.only(left:30.0),
+                           child: Text("Popular",
+                            textAlign: TextAlign.left,
+                            style: GoogleFonts.poppins(
+                              color: Colors.black,
+                              fontSize: size.width * 0.06,
+                              fontWeight: FontWeight.bold,
+                            ),),
+                         ),
+
+
+
+                     ]
+
+                      ),
+                      SizedBox(
+                        height: size.height*0.55,
+                        width: size.width*0.95,
+
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  SizedBox(
+                                    height: size.height*0.2,
+                                    width: size.width*0.4,
+                                    child: Container(
+                                      child: Padding(
+                                        padding: const EdgeInsets.only(top:20.0),
+                                        child: SingleChildScrollView(
+                                          child: Column(
+                                              mainAxisAlignment: MainAxisAlignment.start,
+                                              children: [
+                                                new Image.asset("assets/images/Apple3.png"),
+                                                ]
+
+                                          ),
+                                        ),
+                                      ),
+
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        border: Border.all(
+                                          color: Colors.white,
+                                        ),
+                                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.grey.withOpacity(0.5),
+                                            spreadRadius: 5,
+                                            blurRadius: 7,
+                                            offset: Offset(0, 3), // changes position of shadow
+                                          ),
+                                        ], ),
+
+
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  SizedBox(
+                                    height: size.height*0.2,
+                                    width: size.width*0.4,
+                                    child: Container(
+                                      child: Padding(
+                                        padding: const EdgeInsets.only(top:20.0),
+                                        child: Column(
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            children: [
+                                              new Image.asset("assets/images/Apple2.png"),
+
+
+                                            ]
+
+                                        ),
+                                      ),
+
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        border: Border.all(
+                                          color: Colors.white,
+                                        ),
+                                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.grey.withOpacity(0.5),
+                                            spreadRadius: 5,
+                                            blurRadius: 7,
+                                            offset: Offset(0, 3), // changes position of shadow
+                                          ),
+                                        ], ),
+
+
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                    ),
               ),
             ),
-          )
+          ),
+
+
+
+
 
     );
   }
